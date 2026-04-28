@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/amin.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+                <div class="header_wrapper">
+                    <ul class="header_nav_list">
+                        <li class="header_nav_item ">
+                            <a href="index.html">About me</a>
+                        </li>
+                        <li class="header_nav_item active">
+                            <a href="cards.html">Card illustration</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="book.html">Book illustration</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="comics.html">Comics</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="visual.html">Visual concept</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </header>
+    <main>
+           <section class="cards">
+  <div class="cards_wrapper">
+
+    <!-- Главный слайд -->
+    <div class="card_img_wrapper">
+      <img id="mainImage" src="assets/img/card/card.jpg" alt="">
+
+      <h1 class="card_title">Card illustrations</h1>
+      <p class="card_desc">
+       A set of narrative cards created for social media use. The goal was to present characters and short stories in a compact, shareable format, while maintaining consistency in style and color palette.
+      </p>
+    </div>
+
+    <!-- Превью -->
+    <ul class="cards_list">
+      
+      <li class="cards_item ">
+        <img src="assets/img/card/card_1.jpg" class="item_img">
+      </li>
+      <li class="cards_item">
+        <img src="assets/img/card/card_2.png" class="item_img">
+      </li>
+      <li class="cards_item">
+        <img src="assets/img/card/card_3.png" class="item_img">
+      </li>
+    </ul>
+
+  </div>
+
+
+</section>
+        
+
+    </main>
+<script>
+  // const mainImage = document.getElementById("mainImage");
+  // const items = document.querySelectorAll(".cards_item");
+
+  // let currentIndex = 0;
+  // const delay = 5000;
+  // let interval;
+
+  // function showSlide(index) {
+  //   if (index === currentIndex) return;
+
+  //   // погасить
+  //   mainImage.classList.add("fade-out");
+
+  //   setTimeout(() => {
+  //     // сменить картинку
+  //     mainImage.src = items[index].querySelector("img").src;
+
+  //     // активное превью
+  //     items.forEach(i => i.classList.remove("active"));
+  //     items[index].classList.add("active");
+
+  //     // проявить
+  //     mainImage.classList.remove("fade-out");
+  //     currentIndex = index;
+  //   }, 400); // половина времени transition
+  // }
+
+  // function startAutoplay() {
+  //   interval = setInterval(() => {
+  //     let next = (currentIndex + 1) % items.length;
+  //     showSlide(next);
+  //   }, delay);
+  // }
+
+  // function resetAutoplay() {
+  //   clearInterval(interval);
+  //   startAutoplay();
+  // }
+
+  // items.forEach((item, index) => {
+  //   item.addEventListener("click", () => {
+  //     showSlide(index);
+  //     resetAutoplay();
+  //   });
+  // });
+
+  // startAutoplay();
+</script>
+
+
+
+</body>
+</html>

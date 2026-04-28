@@ -1,0 +1,269 @@
+.animation_blok{
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    opacity: 1;
+    
+    animation-duration:  6s;
+ /* Анимация повторяется бесконечно */
+ animation-iteration-count: infinite;
+ /* Движение только вперёд */
+ animation-direction: normal;
+
+animation-delay: 1s;
+  animation: swim 60s linear infinite; 
+  will-change: transform;
+  z-index: 0;
+}
+
+
+.animation_blok img{
+    width: 400px;
+    height: auto;
+    animation: wave 6s cubic-bezier(.45, 0, .55, 1) infinite;
+    
+}
+
+.fish_wrapper {
+  position: relative;
+}
+
+
+.fish_wrapper::before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  height: 25px;
+  width: 25px;
+  background-color: aliceblue;
+  opacity: 0.4;
+  border-radius: 50%;
+  animation: bubble 2.3s linear infinite;
+}
+.fish_wrapper::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 360px;
+  height: 20px;
+  width: 20px;
+  background-color: aliceblue;
+  opacity: 0.4;
+  border-radius: 50%;
+   animation: bubble 3s linear infinite;
+}
+.btn-comics-top{
+  animation: book 2s ease infinite;
+}
+.btn-comics{
+  animation: book 2s ease infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-50px) scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-20vw) rotateY(0deg);
+  }
+
+10%{
+}
+  
+
+  45% {
+    transform: translateX(120vw) rotateY(0deg);
+  }
+50% {
+    transform: translateX(121vw) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(-20vw) rotateY(180deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+
+  25% {
+    transform: translateY(12px) rotateZ(6deg);
+  }
+
+  50% {
+    transform: translateY(24px) rotateZ(0deg);
+  }
+
+  75% {
+    transform: translateY(12px) rotateZ(-6deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+}
+
+@keyframes book {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform:  rotateZ(6deg) scale(0.8);
+    opacity: 100;
+  }
+  100% {
+   transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* @keyframes wave {
+  0% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+
+  50% {
+    transform: translateY(24px) rotateZ(0deg);
+  }
+
+
+  100% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+} */
+
+
+  /* @keyframes slide {
+ 0% {
+    opacity: 0.3;
+    top: 0;
+    transition-duration: linear;
+  }
+  5%{
+    top: 10%;
+    opacity: 0.7;
+    left: 5%;
+     transition-duration: linear;
+  }
+  10% {
+    opacity: 1;
+    top: 20%;
+    left: 5%;
+    transform: rotate(120deg);
+     transition-duration: linear;
+  }
+  15% {
+    
+     top: 40%;
+    left: 8%;
+    transform: rotate(127deg);
+     transition-duration: linear;
+  }
+ 20% {
+     top: 80%;
+    left: 15%;
+    transform: rotate(127deg);
+     transition-duration: linear;
+  }
+ 25% {
+    top:  80%;
+    left: 20%;
+    transform: rotate(0deg);
+     transition-duration: linear;
+  }
+    30% {
+     top: 80%;
+    left: 28%;
+    transform: rotate(180deg);
+     transition-duration: linear;
+  }
+35% {
+    top: 80%;
+    left: 38%;
+    transform: rotate(0deg);
+     transition-duration: linear;
+
+  }
+  50% {
+    top: 80%;
+    left: 58%;
+    transform: rotate(0deg);
+     transition-duration: linear;
+  }
+    60% {
+    top: 80%;
+    left: 70%;
+    transform: rotate(0deg);
+     transition-duration: linear;
+  }
+    65% {
+       top: 35%;
+    left: 75%;
+    transform: rotate(0deg);
+     transition-duration: linear;
+  }
+    70% {
+    top: 30%;
+    left: 75%;
+    transform: rotate(130deg);
+     transition-duration: linear;
+  }
+    75% {
+       top: 25%;
+    left: 85%;
+    transform: rotate(135deg);
+     transition-duration: linear;
+  }
+    80% {
+    top: 25%;
+    left: 85%;
+    transform: rotate(150deg);
+     transition-duration: linear;
+  }
+    85% {
+     top: 30%;
+    left: 90%;
+    transform: rotate(155deg);
+     transition-duration: linear;
+  }
+    90% {
+    opacity: 0.7;
+    top: 35%;
+    left: 93%;
+    transform: rotate(15deg);
+     transition-duration: linear;
+  }
+    95% {
+     opacity: 0.3;
+    top: 40%;
+    left: 96%;
+    transform: rotate(180deg);
+     transition-duration: linear;
+  }
+  100% {
+    opacity: 0;
+    top: 40%;
+    left: 100%;
+    transform: rotate(236deg);
+     transition-duration: linear;
+  } */
+} 
+
+
