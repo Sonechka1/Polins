@@ -456,11 +456,23 @@ SECTION  COMICS
 .header_mobile_nav_item {
     color: #fff;
     font-family: var(--third-family);
+    opacity: 0;
+    transform: translateX(-20px); /* Сдвиг влево (или translateY для эффекта сверху) */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    pointer-events: none; /* Чтобы нельзя было кликнуть, пока элемент невидим */
+}
+.header_mobile_menu:not(.header_mobile_menu--close) .header_mobile_nav_item {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: ease-in 0.5s;
 }
 
 .header_mobile_nav_item.active a{
     color: #333;
     border-bottom: 1px solid #333;
+
+    
 }
 
 .header_mobile_menu--close{
