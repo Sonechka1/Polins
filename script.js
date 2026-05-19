@@ -1,9 +1,14 @@
 let currentSection = 0;
   const sections = document.querySelectorAll('.section_scroll');
+  const mobileSection = document.querySelectorAll('.mobile-section');
   let isScrolling = false;
 
   if (window.innerWidth <= 768) {
-    mobileSection.style.display = 'block';
+    if (mobileSection) {
+      mobileSection.style.display = 'block';
+    } else {
+      console.warn('⚠️ Элемент .mobile-section не найден в HTML!');
+    }
     sections.forEach(section => section.style.display = 'none');
   }
 
@@ -36,5 +41,11 @@ let currentSection = 0;
   }, { passive: false });
 
 
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);  
+
+
+
+   
+
+
 

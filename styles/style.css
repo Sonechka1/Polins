@@ -24,6 +24,9 @@ html {
     padding-right: 50px;
     padding-bottom: 50px;
 }
+.header_mobile{
+    display: none;
+}
 .mobile-container{
     display: flex;
 
