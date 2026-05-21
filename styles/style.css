@@ -632,6 +632,9 @@ comics
     width: 80%;
     position: relative;
 }
+.team_img{
+    max-width: 100%;
+}
 .img-text{
     width: 100%;
 }
@@ -667,7 +670,7 @@ comics
 .img-wrap{
     width: 100%;
 }
-.img-wrap::after{
+/* .img-wrap::after{
     content: ' “Book spread adaptation” ';
     font-size: 20px;
     transform: rotate(270deg);
@@ -694,7 +697,7 @@ comics
     right: -380px;
     top: 15%;
     width: 100%;
-}
+} */
 
 
 .header_wrapper{
