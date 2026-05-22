@@ -275,6 +275,7 @@ object-fit: contain;
 .comples_info {
    width: 100%;
    order: 0;
+ overflow: hidden;
 }
 
 .Responsibilities{
