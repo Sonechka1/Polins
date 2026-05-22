@@ -75,13 +75,13 @@
     <!-- Превью -->
     <ul class="cards_list">
       
-      <li class="cards_item ">
+      <li class="cards_item  scroll-reveal ">
         <img src="assets/img/card/card_1.jpg" class="item_img">
       </li>
-      <li class="cards_item">
+      <li class="cards_item  scroll-reveal">
         <img src="assets/img/card/card_2.png" class="item_img">
       </li>
-      <li class="cards_item">
+      <li class="cards_item  scroll-reveal">
         <img src="assets/img/card/card_3.png" class="item_img">
       </li>
     </ul>
@@ -94,56 +94,10 @@
 
     </main>
 <script>
-  // const mainImage = document.getElementById("mainImage");
-  // const items = document.querySelectorAll(".cards_item");
-
-  // let currentIndex = 0;
-  // const delay = 5000;
-  // let interval;
-
-  // function showSlide(index) {
-  //   if (index === currentIndex) return;
-
-  //   // погасить
-  //   mainImage.classList.add("fade-out");
-
-  //   setTimeout(() => {
-  //     // сменить картинку
-  //     mainImage.src = items[index].querySelector("img").src;
-
-  //     // активное превью
-  //     items.forEach(i => i.classList.remove("active"));
-  //     items[index].classList.add("active");
-
-  //     // проявить
-  //     mainImage.classList.remove("fade-out");
-  //     currentIndex = index;
-  //   }, 400); // половина времени transition
-  // }
-
-  // function startAutoplay() {
-  //   interval = setInterval(() => {
-  //     let next = (currentIndex + 1) % items.length;
-  //     showSlide(next);
-  //   }, delay);
-  // }
-
-  // function resetAutoplay() {
-  //   clearInterval(interval);
-  //   startAutoplay();
-  // }
-
-  // items.forEach((item, index) => {
-  //   item.addEventListener("click", () => {
-  //     showSlide(index);
-  //     resetAutoplay();
-  //   });
-  // });
-
-  // startAutoplay();
+ 
 </script>
 
-
+<script src="mobile_smooth.js"></script>
 <script src="test.js"></script>
 </body>
 </html>

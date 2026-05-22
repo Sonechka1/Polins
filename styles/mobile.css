@@ -670,9 +670,18 @@ SECTION  COMICS
     overflow: hidden;
     transition: ease 0.8s;
 }
-.blur{
-    opacity: 0.3;
-    transition: ease-in-out 0.9s;
+
+
+.scroll-reveal{
+    filter: blur(15px);
+     opacity: 0; 
+     transform: translateY(20px);
+     transition: ease-in-out 0.8s;
+}
+.is-visible{
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 }

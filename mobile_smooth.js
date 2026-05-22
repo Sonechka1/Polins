@@ -1,21 +1,21 @@
-// const body = document.querySelector('body');
-// console.log(body.offsetHeight)
+const heddenSections = document.querySelectorAll('.scroll-reveal');
 
-// function mobileSmooth() {
-//     if (window.innerWidth <= 768) {
-//          body.classList.add('blur');
-//          console.log(window.innerHeight)
-//           let currentSection = window.innerHeight;
-//            console.log(currentSection);
-//            document.addEventListener('scroll' , ()=>{
-//                currentSection.classList.remove('blur');
-//                console.log('scroll');
-//                console.log('window.innerHeight', window.innerHeight);
-//            })
-           
-              
-          
-//     };     
-// // };
-// пока не работает
-// mobileSmooth();
+const options = {
+  rootMargin: '20px',
+  threshold: 0.20,
+}
+
+const callback = (entries, observer)=>{
+     entries.forEach(element => {
+         if(element.isIntersecting){
+            element.target.classList.add('is-visible')
+            observer.unobserve(element.target); 
+         }
+     });   
+}
+
+const observer = new IntersectionObserver(callback, options)
+
+heddenSections.forEach(section =>{
+    observer.observe(section)
+})
